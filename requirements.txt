@@ -1,0 +1,7 @@
+pandas 
+numpy
+pymongo 
+llama-cpp-python
+python-dotenv
+langchain
+langchain-community
