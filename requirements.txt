@@ -5,3 +5,5 @@ llama-cpp-python
 python-dotenv
 langchain
 langchain-community
+google-generativeai 
+streamlit
