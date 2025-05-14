@@ -7,7 +7,7 @@ A Streamlit application that allows users to query MongoDB collections using nat
 - **Natural Language Queries**: Convert plain English questions into MongoDB queries automatically
 - **CSV Upload**: Easily upload and insert CSV data into your MongoDB collection
 - **Interactive Results**: View query results directly in the app or download as CSV
-- **AI-Powered**: Leverages Gemini AI to interpret user questions and generate accurate MongoDB queries
+- **AI-Powered**: Leverages AI to interpret user questions and generate accurate MongoDB queries
 
 ## Prerequisites
 
@@ -46,18 +46,20 @@ A Streamlit application that allows users to query MongoDB collections using nat
 2. Open your browser and navigate to `http://localhost:8501`
 
 3. The app workflow:
-   - **Upload data**: Use the CSV uploader to add data to your MongoDB collection
+   - **Upload data**: Use the CSV uploader to add data to your MongoDB collection or use sample csv file for testing.
    - **Choose columns**: Select which fields should be available for querying
-   - **Ask questions**: Enter natural language questions about your data
+   - **Ask questions**: Enter natural language questions about your data.  For Ex. What are the products with a price greater than $50?
    - **View results**: See the generated MongoDB query and the matching data
    - **Export results**: Download query results as CSV files
 
 ## Example Queries
 
 - "Show me all products priced over $100"
-- "Find Samsung phones released after 2020"
+- "Find all products with a rating below 4.5 that have more than 200 reviews and
+ are offered by the brand 'Nike' or 'Sony'"
 - "List customers from New York with more than 5 orders"
-- "Show items with low inventory (less than 10)"
+- "Which products in the Electronics category have a rating of 4.5 or higher and are
+ in stock?"
 
 ## How It Works
 
