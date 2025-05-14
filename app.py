@@ -124,14 +124,20 @@ def main():
         return
 
     # === CSV Upload Section ===
-    st.subheader("📤 Upload CSV to MongoDB")
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
-    if uploaded_file:
+    use_sample = st.checkbox("Or use a sample CSV (products.csv)")
+
+    if uploaded_file or use_sample:
         try:
-            df_csv = pd.read_csv(uploaded_file)
+            if uploaded_file:
+                df_csv = pd.read_csv(uploaded_file)
+            else:
+                df_csv = pd.read_csv("data/products.csv")
+
             st.write("Preview:")
             st.dataframe(df_csv.head())
+
             if st.button("Upload to MongoDB"):
                 mongo.insert_csv(df_csv)
                 st.success("CSV uploaded and inserted into MongoDB.")
