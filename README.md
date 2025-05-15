@@ -1,6 +1,7 @@
 # 🧠 MongoDB AI Query Tool
 
 A Streamlit application that allows users to query MongoDB collections using natural language, powered by Google's Gemini AI model.
+Try this : https://llm-query-system.streamlit.app/
 
 ## Features
 
